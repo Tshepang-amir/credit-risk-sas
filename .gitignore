@@ -1,0 +1,11 @@
+# Data files
+*.csv
+*.zip
+
+# Allow the small demo output we want to keep
+!scored_sample.csv
+
+# SAS temp/work outputs (just in case)
+*.sas7bdat
+*.log
+*.lst
