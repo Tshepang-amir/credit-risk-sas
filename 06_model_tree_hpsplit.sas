@@ -1,5 +1,4 @@
 /*--------------------------------------------------------------
-  06a_model_tree_hpsplit.sas
   Model: Decision Tree (PROC HPSPLIT)
 
   Purpose:
