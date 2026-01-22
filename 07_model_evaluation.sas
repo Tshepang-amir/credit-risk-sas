@@ -1,5 +1,4 @@
 /*--------------------------------------------------------------
-  07_model_evaluation.sas
   Purpose:
     - Evaluate both Logistic Regression and Decision Tree models
     - Produce bank-friendly model diagnostics:
