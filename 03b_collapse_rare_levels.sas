@@ -1,5 +1,4 @@
 /*--------------------------------------------------------------
-  03b_collapse_rare_levels.sas
   Purpose:
     - Collapse rare categorical levels into "OTHER"
     - Then, if OTHER is still too small, merge OTHER into a stable
