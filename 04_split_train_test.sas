@@ -1,5 +1,4 @@
 /*--------------------------------------------------------------
-  04_split_train_test.sas
   Purpose:
     - Create reproducible TRAIN/TEST split (70/30)
     - Stratify by target (default) to keep class balance stable
