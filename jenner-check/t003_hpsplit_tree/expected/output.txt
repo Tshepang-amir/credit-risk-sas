@@ -1,0 +1,96 @@
+
+                                                 The HPSPLIT Procedure                                                  
+
+Model Information
+Response Variable         DEFAULT
+Split Criterion           Entropy
+Pruning Method            Cost-Complexity
+Random Seed               42
+Number of Observations    60
+
+Predictors
+    1. TERM_M
+    2. INT_RATE_NUM
+    3. INSTALLMENT
+    4. DTI_CLEAN
+    5. FICO_MID
+    6. LOAN_AMNT
+    7. REVOL_UTIL_CLEAN
+    8. LOG_ANNUAL_INC
+    9. OPEN_ACC
+   10. TOTAL_ACC
+   11. REVOL_BAL
+   12. HOME_OWNERSHIP
+   13. VERIFICATION_STATUS
+   14. PURPOSE
+   15. GRADE
+   16. SUB_GRADE
+   17. APPLICATION_TYPE
+   18. ADDR_STATE
+
+Number of Leaves          4
+Final Tree Depth          2
+
+Fit Statistics
+  accuracy                   0.783333
+  misclass_rate              0.216667
+  log_loss                   0.392341
+
+ROC / AUC by Class
+Class                               AUC
+0                              0.826250
+1                              0.826250
+
+Variable Importance
+Variable                     Importance       Relative
+REVOL_BAL                      0.360832       0.360832
+HOME_OWNERSHIP                 0.320455       0.320455
+INT_RATE_NUM                   0.318713       0.318713
+TERM_M                         0.000000       0.000000
+INSTALLMENT                    0.000000       0.000000
+DTI_CLEAN                      0.000000       0.000000
+FICO_MID                       0.000000       0.000000
+LOAN_AMNT                      0.000000       0.000000
+REVOL_UTIL_CLEAN               0.000000       0.000000
+LOG_ANNUAL_INC                 0.000000       0.000000
+OPEN_ACC                       0.000000       0.000000
+TOTAL_ACC                      0.000000       0.000000
+VERIFICATION_STATUS            0.000000       0.000000
+PURPOSE                        0.000000       0.000000
+GRADE                          0.000000       0.000000
+SUB_GRADE                      0.000000       0.000000
+APPLICATION_TYPE               0.000000       0.000000
+ADDR_STATE                     0.000000       0.000000
+
+                                       Decision Tree (HPSPLIT) - scored PD (head)                                       
+
+
+DEFAULT        PD
+-------  --------
+      0         0
+      0  0.363636
+      1  0.363636
+      0         0
+      0  0.363636
+      1         1
+      0  0.363636
+      0  0.363636
+      1         1
+      0         0
+
+... 50 more observations (showing 10 of 60)
+
+                                Decision Tree (HPSPLIT) - Confusion Matrix (Cutoff=0.20)                                
+
+                                                   The FREQ Procedure
+
+Table of default by pred
+
+default |         0 |         1 |      Total
+--------+-----------+-----------+-----------
+0       |        19 |        21 |         40
+--------+-----------+-----------+-----------
+1       |         2 |        18 |         20
+--------+-----------+-----------+-----------
+Total   |        21 |        39 |         60
+

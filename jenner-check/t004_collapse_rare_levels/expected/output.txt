@@ -1,0 +1,22 @@
+                                             Post-collapse category checks                                              
+
+                                                   The FREQ Procedure
+
+                                               Cumulative    Cumulative
+home_ownership_c2    Frequency    Percent     Frequency      Percent
+--------------------------------------------------------------------------
+OTHER                       60    100.00           60       100.00
+
+                                        Cumulative    Cumulative
+purpose_c2    Frequency    Percent     Frequency      Percent
+-------------------------------------------------------------------
+OTHER                60    100.00           60       100.00
+                                                  Target balance check                                                  
+
+                                                   The FREQ Procedure
+
+                                     Cumulative    Cumulative
+default    Frequency    Percent     Frequency      Percent
+----------------------------------------------------------------
+0                 40     66.67           40        66.67
+1                 20     33.33           60       100.00

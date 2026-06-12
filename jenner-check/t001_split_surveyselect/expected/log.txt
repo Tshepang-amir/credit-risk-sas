@@ -1,0 +1,48 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: Option VALIDVARNAME changed to V7.
+NOTE: DATA work.lc_sample
+
+NOTE: Processing inline DATALINES (60 lines)
+
+NOTE: Read 60 rows from DATALINES.
+NOTE: Wrote work.lc_sample (60 rows, 23 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=work.lc_sample
+
+NOTE: Unlicensed mode - input limited to 100 observations.
+NOTE: Read 60 rows from work.lc_sample.
+NOTE: Wrote work._split_base (60 rows, 23 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC SURVEYSELECT data=work._split_base
+
+NOTE: PROC SURVEYSELECT completed.
+NOTE: DATA work.train work.test
+
+NOTE: Multi-output DATA step splits stream into: work.train work.test
+
+NOTE: Read 60 rows from work._split_flag.
+NOTE: Wrote work.train (60 rows, 24 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Train/Test row counts.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: Option TITLE changed to Train/Test default balance (should be very similar).
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_default.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_default.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: Option TITLE changed to Default rate check (mean of default).
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.

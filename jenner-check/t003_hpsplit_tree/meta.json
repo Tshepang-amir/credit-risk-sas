@@ -1,0 +1,8 @@
+{
+  "bundle": "t003_hpsplit_tree",
+  "source_file": "06_model_tree_hpsplit.sas",
+  "source_blob_sha": "580efdeeff6bd8c5a7f8512ee05a628ce62c613b",
+  "source_commit": "987b56c1b45199c9d02d70929c071b98a23f7b19",
+  "tier": "real_data",
+  "notes": "Decision-tree PD model: PROC HPSPLIT (entropy growth, cost-complexity pruning, seed=42, assignmissing=similar), exports scoring code via CODE FILE=, then %includes it to score and standardise PD=P_default1, followed by a confusion matrix at cutoff 0.20. Input is a 60-row real slice of scored_sample.csv, inlined via DATALINES; modelling logic unchanged."
+}
