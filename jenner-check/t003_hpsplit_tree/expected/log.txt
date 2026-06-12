@@ -1,0 +1,42 @@
+Jenner 0.1.0 (Unlicensed - limited to 100 observations)
+Get a license at https://jenneranalytics.com/license
+
+NOTE: Option OBS changed to 100.
+NOTE: Option VALIDVARNAME changed to V7.
+NOTE: ODS Graphics is ON (width=640px, height=480px, format=SVG).
+NOTE: DATA work.lc_sample
+
+NOTE: Processing inline DATALINES (60 lines)
+
+NOTE: Read 60 rows from DATALINES.
+NOTE: Wrote work.lc_sample (60 rows, 23 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC HPSPLIT data=work.lc_sample
+
+NOTE: PROC HPSPLIT completed.
+NOTE: DATA work.score_tree_test
+
+
+NOTE: Read 60 rows from work.lc_sample.
+NOTE: Wrote work.score_tree_test (60 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Decision Tree (HPSPLIT) - scored PD (head).
+NOTE: PROC PRINT data=work.score_tree_test
+
+NOTE: PROC PRINT completed: 10 observations printed, 2 variables
+NOTE: DATA work.tree_conf
+
+
+NOTE: Read 60 rows from work.score_tree_test.
+NOTE: Wrote work.tree_conf (60 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Decision Tree (HPSPLIT) - Confusion Matrix (Cutoff=0.20).
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_mosaic_default_pred.spec.json
+NOTE: PROC FREQ statement used.

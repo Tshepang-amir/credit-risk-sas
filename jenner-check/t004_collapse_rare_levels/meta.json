@@ -1,0 +1,8 @@
+{
+  "bundle": "t004_collapse_rare_levels",
+  "source_file": "03b_collapse_rare_levels.sas",
+  "source_blob_sha": "90f053f1e1fcdb6afb6d0949c685b560123bccc1",
+  "source_commit": "987b56c1b45199c9d02d70929c071b98a23f7b19",
+  "tier": "real_data",
+  "notes": "Rare-level collapsing: PROC FREQ OUT= to flag rare categorical levels, by-group MERGE to recode to OTHER, CALL SYMPUTX/SYMGETN feedback loop to merge a too-small OTHER home_ownership bucket into RENT. The *_c columns are materialised with upcase(strip(...)) of the real category fields (as the upstream 03 step does). Input is a 60-row real slice of scored_sample.csv, inlined via DATALINES; collapsing logic unchanged."
+}

@@ -1,0 +1,8 @@
+{
+  "bundle": "t002_decile_lift_eval",
+  "source_file": "05_logistic_baseline.sas (+07_model_evaluation.sas)",
+  "source_blob_sha": "630300bdfec2f8711915116f27453e2b939eb74e",
+  "source_commit": "987b56c1b45199c9d02d70929c071b98a23f7b19",
+  "tier": "real_data",
+  "notes": "Bank-style scorecard evaluation: confusion matrix at cutoff 0.20, PROC RANK deciles, PROC SQL decile table with lift and cumulative bad capture. PD = P_1 read straight from the repo's scored data (60-row real slice of scored_sample.csv, inlined via DATALINES). Evaluation logic unchanged from the upstream scripts."
+}

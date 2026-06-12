@@ -1,0 +1,48 @@
+
+The SURVEYSELECT Procedure
+
+Selection Method     SRS
+Input Data Set       work._split_base
+Number of Obs Read   60
+Strata Variable      default
+Sample Size          60
+Sampling Weight      1.0000
+                                                 Train/Test row counts                                                  
+
+dataset   n
+-------  --
+  TRAIN  41
+   TEST  19
+                                  Train/Test default balance (should be very similar)                                   
+
+                                                   The FREQ Procedure
+
+DEFAULT    Frequency    Percent
+--------------------------------
+0                 21     51.22
+1                 20     48.78
+                                  Train/Test default balance (should be very similar)                                   
+
+                                                   The FREQ Procedure
+
+DEFAULT    Frequency    Percent
+--------------------------------
+0                 19    100.00
+                                          Default rate check (mean of default)                                          
+
+                                                  The MEANS Procedure
+
+ Variable        N           Mean
+ --------------------------------
+ DEFAULT        41      0.4878049
+ --------------------------------
+
+                                          Default rate check (mean of default)                                          
+
+                                                  The MEANS Procedure
+
+ Variable        N           Mean
+ --------------------------------
+ DEFAULT        19      0.0000000
+ --------------------------------
+

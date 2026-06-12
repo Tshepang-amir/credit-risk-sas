@@ -1,0 +1,8 @@
+{
+  "bundle": "t001_split_surveyselect",
+  "source_file": "04_split_train_test.sas",
+  "source_blob_sha": "2c957a18600b543aa18e7419848fdd33f1aebae4",
+  "source_commit": "987b56c1b45199c9d02d70929c071b98a23f7b19",
+  "tier": "real_data",
+  "notes": "Stratified 70/30 TRAIN/TEST split via PROC SURVEYSELECT (strata default, srs, seed=42, outall) + multi-output DATA step + PROC SQL union audit + PROC FREQ/MEANS balance checks. Input is a 60-row deterministic slice of scored_sample.csv, inlined via DATALINES so the bundle is self-contained; split logic unchanged from the upstream script."
+}
